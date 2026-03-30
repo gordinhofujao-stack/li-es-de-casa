@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+public class exercicio6 {
+    public static void main(String[] args) {
+        
+        Scanner ent = new Scanner (System.in);
+
+System.out.println("voce e m ou f");
+String genero = ent.next();
+
+System.out.println("digite a sua altura (em metros exemplo 1,80)");
+double altura = ent.nextDouble();
+
+
+
+if (genero.equals("m")) {System.out.println(" seu peso ideal e " + ((altura*72.7) - 58));}
+
+ else if (genero.equals("f")) {System.out.println( " seu peso ideal e " + ((altura*62.1) - 44.7));}
+  
+   else  {System.out.println("  !!!!GENERO INVALIDO!!! (ao digitar o genero coloque apenas m ou n)");}
+
+
+
+ent.close();
+
+    }
+}

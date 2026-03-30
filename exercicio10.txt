@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class exercicio10 {
+    public static void main (String [] args){
+Scanner ent = new Scanner(System.in);
+
+System.out.println(" digite o primeiro numero ");
+double num1  = ent.nextDouble();
+
+System.out.println(" digite o segundo numero ");
+double num2  = ent.nextDouble();
+
+System.out.println(" digite o terceiro numero ");
+double num3  = ent.nextDouble();
+
+
+if (num1==num2 && num1==num3) {System.out.println("   os numeros sao iguis  ");}
+ 
+else if (num1>=num2 &&num1>=num3) {System.out.println("  o maior numero e " + num1);}
+
+else if (num2>=num1 &&num2>=num3) {System.out.println("  o maior numero e " + num2);}
+
+else {System.out.println("  o maior numero e " + num3);}
+
+
+
+ent.close();
+
+    }
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class exercicio7 {
+    public static void main (String [] args){
+Scanner ent = new Scanner(System.in);
+
+System.out.println(" Digite o seu salario ");
+double salario = ent.nextDouble();
+
+System.out.println( " Digite em quantos anos voce esta nesta empressa ");
+double tempo = ent.nextDouble();
+
+if (tempo>=5) {System.out.println(" voce tem um bonus de "+ (salario*0.2) + " Reais "+" seu salario com o bonus fica " + (salario*1.2) + " Reais");}
+    
+ else if (tempo<5) {System.out.println(" Voce nao recebe o bonus ");}
+
+
+ent.close();
+
+    }
+}

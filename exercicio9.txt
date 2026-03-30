@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class exercicio9 {
+    public static void main (String [] args){
+Scanner ent = new Scanner(System.in);
+
+System.out.println(" Digite o seu salario ");
+double salario  = ent.nextDouble();
+
+System.out.println(" Digite o valor do emprestimo ");
+double valemprestimo  = ent.nextDouble();
+
+if (valemprestimo<=(salario*0.30)) {System.out.println("Emprestimo aprovado");}
+ 
+else {System.out.println("Emprestimo negado");}
+
+
+
+
+
+
+
+ent.close();
+
+    }
+}

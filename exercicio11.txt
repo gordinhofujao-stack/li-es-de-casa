@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class exercicio11 {
+    public static void main (String [] args){
+Scanner ent = new Scanner(System.in);
+
+System.out.println(" Digite a sua idade ");
+double idade = ent.nextDouble();
+
+
+
+if (idade>5 && idade<7) {System.out.println(" sua classe e Infantil A ");}
+ 
+else if (idade>8 && idade<10) {System.out.println(" sua classe e Infantil B ");}
+
+else if (idade>11 && idade<13) {System.out.println(" sua classe e juvenil A");}
+
+else if (idade>14 && idade<17) {System.out.println(" sua classe e juvenil B ");}
+
+else if (idade>=18) {System.out.println(" sua classe e Senior ");}
+
+
+
+ent.close();
+
+    }
+}

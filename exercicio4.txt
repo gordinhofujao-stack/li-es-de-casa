@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class exercicio4 {
+    public static void main(String[] args) {
+        Scanner ent = new Scanner(System.in);
+
+        System.out.println(" digite o numero ");
+        double num1 = ent.nextDouble();
+
+        System.out.println(" digite o numero ");
+        double num2 = ent.nextDouble();
+
+    if (num1>num2) {System.out.println(" numeros na ordem decresente " + num1 +" , "+ num2);}
+
+    else  if (num1<num2) {System.out.println(" numeros na ordem decresente " + num2 +" , "+ num1);}
+
+    else {System.out.println(" !!!ERRO NUMEROS IGUAIS!!! ");}
+
+
+
+    ent.close();   
+    }
+}

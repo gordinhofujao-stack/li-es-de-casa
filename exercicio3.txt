@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+public class exercicio3 {
+    public static void main(String[] args) {
+        Scanner ent = new Scanner(System.in);
+        
+        System.out.println("digite o primeiro numero");
+        double num1 =ent.nextDouble();
+
+        System.out.println("digite o segundo numero");
+        double num2 =ent.nextDouble();
+
+
+    if (num1==num2) {System.out.println(" Numeros iguais ");}
+
+    else if (num1>num2) {System.out.println("A diferença entre o maior pelo menor "+" e de "+ (num1-num2));}
+
+    else {System.out.println(" A diferença entre o maior pelo menor " + "  e de "  + (num2-num1));}
+
+
+    ent.close();
+
+    }
+
+}

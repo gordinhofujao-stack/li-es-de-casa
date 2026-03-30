@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class desafio {
+    public static void main (String [] args){
+Scanner ent = new Scanner(System.in);
+
+System.out.println(" qual e a sua idade  ");
+double idade  = ent.nextDouble();
+
+System.out.println(" voce ja tem o titulo eleitoral [s ou n] ");
+String titulo = ent.next();
+
+System.out.println(" voce esta sobre direitos politicos suspensos [s ou n] ");
+String suspenso = ent.next();
+
+
+
+if (idade<16) {System.out.println("voce nao pode votar");}
+
+
+else if (titulo.equalsIgnoreCase("n")) {System.out.println(" voce nao pode votar (sem o titulo) ");}
+
+else if (suspenso.equalsIgnoreCase("s")) {System.out.println(" voce nao pode votar (estando suspenso)");}
+
+else if (suspenso.equalsIgnoreCase("n")) {System.out.println(" voce pode votar ");}
+
+else if (titulo.equalsIgnoreCase("s")) {System.out.println(" voce pode votar ");}
+
+ent.close();
+
+    }
+}

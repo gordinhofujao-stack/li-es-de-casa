@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class exercicio12 {
+    public static void main (String [] args){
+Scanner ent = new Scanner(System.in);
+
+System.out.println(" Digite o seu salario ");
+Double sal  = ent.nextDouble();
+
+
+
+if (sal<=600) {System.out.println("   isento  ");}
+ 
+else if (sal>600 && sal<=1200) {System.out.println(" o seu desconto e de 20% e vai ficar " + (sal*0.2));}
+
+else if (sal>1200 && sal<=2000) {System.out.println(" o seu desconto e de 25% e vai ficar " + (sal*0.25));}
+
+else if (sal>2000) {System.out.println(" o seu desconto e de 30% e vai ficar " + (sal*0.20));}
+
+
+
+
+
+
+ent.close();
+
+    }
+}
