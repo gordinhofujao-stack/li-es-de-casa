@@ -1,0 +1,67 @@
+
+
+public class Exercicio4 { 
+
+    public static void main(String[] args) { 
+
+        Scanner scanner = new Scanner(System.in); 
+
+ 
+
+        System.out.print("Digite o plano de trabalho (A, B ou C): "); 
+
+        char plano = scanner.next().toUpperCase().charAt(0); 
+
+ 
+
+        System.out.print("Digite o salário atual: "); 
+
+        double salarioAtual = scanner.nextDouble(); 
+
+ 
+
+        double novoSalario; 
+
+ 
+
+        switch (plano) { 
+
+            case 'A': 
+
+                novoSalario = salarioAtual * 1.10; // Aumento de 10% 
+
+                break; 
+
+            case 'B': 
+
+                novoSalario = salarioAtual * 1.15; // Aumento de 15% 
+
+                break; 
+
+            case 'C': 
+
+                novoSalario = salarioAtual * 1.20; // Aumento de 20% 
+
+                break; 
+
+            default: 
+
+                novoSalario = salarioAtual; 
+
+                System.out.println("Plano inválido. O salário não será alterado."); 
+
+                break; 
+
+        } 
+
+ 
+
+        System.out.println("Novo salário: " + novoSalario); 
+
+ 
+
+        scanner.close(); 
+
+    } 
+
+} 
