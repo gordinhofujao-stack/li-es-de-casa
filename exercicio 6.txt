@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+public class exercicio6 {
+    public static void main(String[] args) {
+   Scanner numer = new Scanner(System.in); 
+
+
+        int n = 1;
+        int menor =0;
+        
+        while (n <= 10) {
+            System.out.println("digite o "+n+" numero");
+            int num = numer.nextInt();
+            n++;
+            
+            if (n==1){menor=num;}
+            else if (num<menor){menor = num;}
+        }
+            
+            
+            
+        System.out.println("o menor numero e "+menor);
+            
+numer.close ();
+    }
+}

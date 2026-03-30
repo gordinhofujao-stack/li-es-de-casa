@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class exercicio2 {
+    
+    public static void main (String [] args){
+Scanner scanner = new Scanner(System.in);
+
+
+        int n = 1;
+        int pares = 0;
+        int impares = 0;
+while ( n <=10){   System.out.println("digite o " + n + " numero");
+
+n++;
+     double numer = scanner.nextDouble();
+     
+     if (numer %2 == 0) { pares++;}
+     else if (numer %2 == 1) {impares++;}}
+     
+System.out.println("total de pares "+pares);
+System.out.println("total de impares "+impares);
+    
+
+scanner.close();
+
+
+
+
+ } 
+}

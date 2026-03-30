@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class exercicio7 {
+    
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int n = 1;
+        int saudaveis = 0;
+
+        while (n <= 10) {
+            System.out.println("Pessoa " + n);
+
+            System.out.print("Digite o peso (kg): ");
+            double peso = scanner.nextDouble();
+
+            System.out.print("Digite a altura (m): ");
+            double altura = scanner.nextDouble();
+
+            double imc = peso / (altura * altura);
+
+            if (imc >= 18.5 && imc <= 24.9) {
+                saudaveis++;
+            }
+
+            n++;
+        }
+
+        System.out.println("Quantidade de pessoas com IMC normal: " + saudaveis);
+
+        scanner.close();
